@@ -1,0 +1,71 @@
+/*
+    Author: 1652741, Dinghao Yang
+    Date: 2019-03-25
+    Description: This is the first homework for Web Programming course, focusing on html & css practice, 
+    and this file contains the css for the pie page.*/
+
+
+h1,h2,h3,h4,h5,h6{
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+h2,h3,h4,h5,h6{
+    text-align: left;
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    color: #404040;
+    font-size:11pt;
+    font-family: Georgia, Garamond, serif;
+}
+
+a{
+    color: #A4A400;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+pre{
+    font-family: monospace;
+}
+
+.quotation{
+    font-style: italic;
+    background-color: #FFFFA8;
+    margin-left: 5%;
+    margin-right: 5%;
+}

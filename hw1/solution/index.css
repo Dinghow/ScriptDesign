@@ -1,0 +1,203 @@
+/*
+Author: 1652741, Dinghao Yang
+Date: 2019-03-25
+Description: This is the first homework for Web Programming course, focusing on html & css practice, 
+and this file contains the css for the index page.*/
+
+
+body {
+    margin: 0 ;
+    padding: 0 ;
+    color: #333 ;
+    font-family: 'Noto Sans Korean', sans-serif;
+    background: #f5f5f5 ;
+    background-image: url("https://grannyspiefactory.com/wp-content/uploads/2016/10/homepage-header-2.jpg");
+}
+
+.index-wrapper {
+    position: relative ;
+    width: 960px ;
+    margin: 30px auto 60px ;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff ;
+}
+
+
+/* header */
+header {
+    position: relative ;
+    padding: 30px ;
+    border-bottom: 1px solid #ededed ;
+}
+
+header h1 {
+    position: absolute ;
+    /* color: #1C86EE ; */
+    bottom: 60px ;
+    right: 20px ;
+    z-index: 1 ;
+    font-size: 42px ;
+}
+
+header .heading- {
+    position: absolute ;
+    left: 770px ;
+    bottom: 0 ;
+    z-index: 1 ;
+    height: 30px ;
+    padding-left: 10px ;
+    margin: 0 ;
+    font-size: 18px ;
+    line-height: 30px ;
+}
+
+
+header .welcome-container {
+    position: absolute ;
+    left: 770px ;
+    bottom: 0 ;
+    color: #1C86EE ;
+    z-index: 1 ;
+    height: 30px ;
+    padding-left: 10px ;
+    margin: 0 ;
+    font-size: 18px ;
+    line-height: 30px ;
+}
+header .message-container {
+    position: absolute ;
+    left: 770px ;
+    bottom: -20px ;
+    z-index: 1 ;
+    height: 20px ;
+    padding-left: 10px ;
+    margin: 0 ;
+    color: #666 ;
+    font-size: 14px ;
+    font-weight: normal ;
+    line-height: 20px ;
+}
+header .profile-picture {
+    position: absolute ;
+    right : 190px ;
+    bottom: -50px ;
+    z-index: 2 ;
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50% ;
+}
+header .profile-picture img {
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50% ;
+    border: 1px solid rgba(0, 0, 0, 0.1) ;
+}
+header .contact-container {
+    position: relative ;
+    top: 0px ;
+    left: 30px ;
+}
+header .contact-container .contact-list li {
+    position: relative ;
+    height: 25px ;
+    padding-left: 25px ;
+    color: #666 ;
+    font-size: 13px ;
+    line-height: 25px ;
+    text-align: left ;
+}
+header .contact-container .contact-list li span {
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    z-index: 1 ;
+    width: 25px ;
+    height: 25px ;
+    text-align: center ;
+}
+
+
+/* main */
+#main {
+    position: relative ;
+}
+
+#main > .information-item-wrapper {
+    position: relative ;
+    top: 0 ;
+    left: 0 ;
+    width: 720px ;
+    padding: 75px 0 40px ;
+    border-right: 1px solid #ededed ;
+}
+
+#main .information-item {
+    position: relative ;
+    padding: 0 60px ;
+    margin-bottom: 60px ;
+}
+#main .information-item .inner {
+    padding-bottom: 30px ;
+    border-bottom: 1px solid #ededed ;
+}
+#main .information-item h2 {
+    position: absolute ;
+    top: -10px ;
+    right: -240px ;
+    z-index: 1 ;
+    width: 240px ;
+    height: 30px ;
+    padding: 0 30px ;
+    font-size: 24px ;
+    text-align: left ;
+    text-transform: capitalize ;
+}
+#main ul li {
+    position: relative ;
+    margin: 0 0 30px ;
+}
+
+#main h2{
+    font-size: 20px;
+    text-align: center;
+    color: #eeec88
+}
+
+
+/* feature */
+.feature h3 {
+    font-size: 18px ;
+    color: #1C86EE ;
+}
+
+.feature .company {
+    margin: 0 0 10px ;
+    color: #959595 ;
+    font-size: 13px ;
+    font-weight: normal ;
+}
+.feature .date {
+    position: absolute ;
+    top: 5px ;
+    right: 0 ;
+    color: #bbb ;
+    font-size: 12px ;
+}
+.feature .detail {
+    font-size: 14px ;
+}
+
+/* footer */
+footer {
+    position: absolute ;
+    bottom: -30px ;
+    left: 0 ;
+    width: 100% ;
+    padding: 0 30px ;
+    font-size: 12px ;
+    text-align: left ;
+    color: #bbb ;
+}
+footer a {
+    font-weight: bold ;
+}

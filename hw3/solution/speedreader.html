@@ -1,0 +1,69 @@
+<!-- 
+Author: 1652741, Dinghao Yang
+Date: 2019-04-17
+Description: This is the third homework for Web Programming course, focusing on html & css & js practice, 
+and this file contains the html for the index page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Speedreader</title>
+        <link rel="stylesheet" type="text/css" href="./speedreader.css">
+        <script src="./speedreader.js"></script>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h1>SpeedReader</h1>
+
+        <div id="reader-box"></div> 
+
+        <div class="control-box">
+            <form>
+                <fieldset>
+                    <legend>Play Controls</legend>
+                    <button type="button" id="start-button">Start</button>
+                    <button type="button" id="stop-button" disabled>Stop</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="control-box">
+            <form>
+                <fieldset>
+                    <legend>Speed:</legend>
+                    <select id="speed-select">
+                        <option value="300">200 wpm</option>
+                        <option value="200">300 wpm</option>
+                        <option value="171">350 wpm</option>
+                        <option value="150">400 wpm</option>
+                        <option value="133">450 wpm</option>
+                        <option value="120">500 wpm</option>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="control-box">
+            <form>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <input type="radio" name="size" value="36" checked>Medium
+                    <input type="radio" name="size" value="48">Big
+                    <input type="radio" name="size" value="60">Bigger
+                </fieldset>
+            </form>
+        </div><br />
+
+        <div class="control-box">
+            <form>
+                <fieldset>
+                    <legend>Input Text</legend>
+                    <textarea rows="10" cols="80" id="input-box"></textarea>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+
+
+</html>
