@@ -1,0 +1,193 @@
+/* 
+Author: 1652741, Dinghao Yang
+Date: 2019-06-22
+Description: This is the final project for Web Programming course, focusing on js practice, 
+and this file contains the css for the index page.*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.todo-mvc {
+    width: 90%;
+    margin: auto;
+
+}
+
+#input-content {
+    width: 60%;
+    height: 40px;
+    margin: 0 5px;
+    line-height: 40px;
+    font-size: 25px;
+    color: black;
+    display: inline-block;
+}
+
+#input-content::placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #e6e6e6;
+}
+
+#input-add {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 3px 10px 0 rgba(#000000, 0.5);
+    background: rgba(47, 175, 64, 0.5);
+    border-radius: 100%;
+    color: white;
+    font-size: large;
+    vertical-align: bottom;
+}
+
+.select-all {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 3px 10px 0 rgba(#000000, 0.5);
+    background: rgba(47, 175, 64, 0.5);
+    border-radius: 100%;
+    color: white;
+    font-size: large;
+    vertical-align: bottom;
+    transform: rotate(90deg);
+}
+
+.main {
+    width: 80%;
+    background: #FFF; 
+    font-size: 20px;
+    /* max-width: 15em; */
+    margin: auto;
+    margin-top: 15px;
+    padding: 0.5em 1em;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+#todo-list {
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.list-item {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+
+.item-toggle {
+    display: inline-block;
+    float:left;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 15px 10px;
+    vertical-align: bottom;
+}
+
+.list-item.Completed{
+    color: rgba(47, 175, 64, 0.5);
+    content: '✔';
+}
+
+.item-remove {
+    float: right;
+    color: rgba(47, 175, 64, 0.5);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+
+    background: white;
+    border: none;
+    vertical-align: bottom;
+    font-size: 20pt;
+    margin: 15px auto;
+    padding: 0;
+}
+
+.item-content{
+    float: left;
+    height: 40px;
+    width: 70%;
+    min-width: 160px;
+    line-height: 40px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.list-item.Completed .item-content {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.filters {
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0;
+    list-style: none;
+    border: 1px solid rgba(175, 47, 47, 0.3);
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px 0 rgba(#000000, 0.5);
+    background: rgba(47, 175, 64, 0.5);
+    color: white;
+    font-size: large;
+    vertical-align: bottom;
+}
+
+.filters li {
+    display: inline-block;
+}
+
+.filters li a {
+    color: inherit;
+    margin: 3px 1px;
+    padding: 3px 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: small;
+}
+
+.filters li a.selected {
+    font-weight: bolder;
+}
+
+#todo-count {
+    display:inline-block;
+    float: left;
+    text-align: left;
+    font-size: small;
+}
+
+.clear-completed {
+    display:inline-block;
+    float: right;
+    margin: auto;
+    text-align: right;
+    font-size: small;
+}
+
+.footer{
+    overflow: hidden;
+    text-align: center;
+}

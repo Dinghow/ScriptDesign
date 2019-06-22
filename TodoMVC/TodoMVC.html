@@ -1,0 +1,49 @@
+<!-- 
+Author: 1652741, Dinghao Yang
+Date: 2019-06-22
+Description: This is the final project for Web Programming course, and this file contains the html for the index page. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TodoMVC</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!-- Avoid IE to use compatible model -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Optimize for some moblie devices don't support viewport -->
+        <meta name="HandheldFriendly" content="true">
+        <!-- Optimize for IOS device -->
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="./TodoMVC.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="TodoMVC.js"></script>
+        <script src="model.js"></script>
+        <script src="provider.js"></script>
+        <script src="hammer.js"></script>
+    </head>
+    <body>
+        <div class="todo-mvc">
+            <h1>Todo List</h1>
+            <!-- Add -->
+            <div class="input-bar">
+                <button class="select-all">❯</button>
+                <input id="input-content" type="text" placeholder="What needs to be done" autofocus>
+                <button id="input-add" >+</button>
+            </div>
+            <!-- Todo list detail -->
+            <div class="main">
+                <div id="todo-list"></div>
+                <footer class="footer">
+                    <span id="todo-count"></span>
+                    <ul class="filters">
+                        <li><a class="selected" style="cursor:pointer;">All</a></li>
+                        <li><a class="" style="cursor:pointer;">Active</a></li>
+                        <li><a class="" style="cursor:pointer;">Completed</a></li>
+                    </ul>
+                    <span class="clear-completed">Clear completed</span>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
